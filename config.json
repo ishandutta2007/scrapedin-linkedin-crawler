@@ -5,6 +5,7 @@
   "relatedProfilesKeywords": [],
   "maxConcurrentCrawlers": 2,
   "profileLoadWaitTime": 5000,
+  "companyLoadWaitTime": 5000,
   "saveDirectory": "./crawledProfiles",
   "puppeteerArgs": { "args": ["--no-sandbox"] },
   "isHeadless": true,
@@ -16,6 +17,12 @@
     "https://www.linkedin.com/in/profiles/",
     "https://www.linkedin.com/in/to-start-the-crawler/"
   ],
+  "companies": [
+    "https://www.linkedin.com/company/place/",
+    "https://www.linkedin.com/company/here/",
+    "https://www.linkedin.com/company/companies/"
+  ],
   "interProfileWaitTime": 1000,
+  "interCompanyWaitTime": 1000,
   "avoidAlreadyCrawled": false
 }

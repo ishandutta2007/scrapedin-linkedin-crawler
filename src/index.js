@@ -1,6 +1,6 @@
 const scrapedin = require('scrapedin')
 const configFile = require('../config.json')
-const crawl = require('./crawler')
+const crawl = require('./companycrawler')
 
 const config = {
   email: process.env.SCRAPEDIN_EMAIL || configFile.email,
@@ -17,4 +17,4 @@ if(configFile.cookiesFile && configFile.cookiesFile.length) {
 }
 
 scrapedin(config)
-  .then((profileScraper) => crawl(profileScraper, configFile.rootProfiles))
+  .then((companyScraper) => crawl(companyScraper, configFile.companies))

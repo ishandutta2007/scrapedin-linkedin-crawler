@@ -62,3 +62,8 @@ typings/
 
 # cookies files
 cookies.txt
+
+crawledProfiles
+package-lock.json
+# my local config
+config.local.json
